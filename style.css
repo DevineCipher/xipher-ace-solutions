@@ -110,3 +110,32 @@ h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif;margin:0;letter-spacing:-.
 .card .num{font-size:34px;line-height:1.1}
 .card .grad,.card p.grad{color:transparent}
 .card .eyebrow{font-size:13px;color:#8F5E10}
+.tl{display:flex;flex-direction:column;gap:28px;position:relative}
+.step{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:28px;align-items:center;background:#fff;border:1px solid #E6E1D8;border-radius:22px;padding:28px;animation:rise linear both;animation-timeline:view();animation-range:entry 0% cover 20%}
+.step:hover{border-color:#D29A3A;box-shadow:0 0 0 1px #D29A3A,0 18px 40px rgba(162,108,20,.15)}
+.step .txt{display:flex;flex-direction:column;gap:12px}
+.step h3{font-size:24px}.step p{color:#5C5850;line-height:1.65}
+.meta{display:flex;align-items:center;gap:12px}
+.sno{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;color:#000;background:linear-gradient(135deg,#E2AE4D,#A26C14);border-radius:999px;padding:6px 12px}
+.live{font-size:12px;font-weight:600;color:#137A4B;background:#E6F6EE;border-radius:999px;padding:5px 10px}
+.live:before{content:"● "}
+.tags{display:flex;flex-wrap:wrap;gap:8px}.tags span{font-size:13px;border:1px solid #E6E1D8;border-radius:999px;padding:5px 11px;color:#2B2B2B}
+.stage{position:relative;height:300px;border-radius:18px;background:#0B0B0B;border:1px solid #262626;overflow:hidden;color:#F5F5F5;font-size:13px}
+.stage:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0,rgba(210,154,58,.2),transparent 60%)}
+.ab{position:absolute}
+.box{background:#161616;border:1px solid #3D3D3D;border-radius:10px;padding:10px}
+.gl{color:#D29A3A;font-size:11px;letter-spacing:.12em}
+.row{height:22px;border-radius:5px;background:#262626;margin-top:6px;display:flex;align-items:center;padding:0 8px;font-size:11px;color:#D8D6D0}
+.k8{animation-duration:8s;animation-iteration-count:infinite;animation-timing-function:ease-in-out;animation-fill-mode:both}
+@keyframes mv{0%,8%{transform:translateX(0);opacity:1}30%,90%{transform:translateX(190px);opacity:1}100%{transform:translateX(190px);opacity:0}}
+@keyframes cut{0%,8%,62%,100%{opacity:0}12%,58%{opacity:1}}
+@keyframes pend{0%,10%{opacity:0;transform:translateY(8px)}16%,58%{opacity:1;transform:none}72%,100%{opacity:0;transform:translate(150px,-120px) scale(.4)}}
+@keyframes show1{0%,12%,62%,100%{opacity:0}16%,58%{opacity:1}}
+@keyframes show2{0%,70%,98%,100%{opacity:0}74%,94%{opacity:1}}
+@keyframes cyc{0%,100%{border-color:#3D3D3D;box-shadow:none}15%,30%{border-color:#D29A3A;box-shadow:0 0 18px rgba(210,154,58,.5)}}
+@keyframes fscan{0%,100%{transform:translateY(0)}50%{transform:translateY(96px)}}
+@keyframes fade3{0%,30%{opacity:0;transform:translateY(8px)}36%,92%{opacity:1;transform:none}100%{opacity:0}}
+@keyframes fade5{0%,50%{opacity:0;transform:translateY(8px)}56%,92%{opacity:1;transform:none}100%{opacity:0}}
+@keyframes fade7{0%,70%{opacity:0;transform:translateY(8px)}76%,92%{opacity:1;transform:none}100%{opacity:0}}
+@keyframes fan{0%,10%{transform:none}40%,85%{transform:translateX(var(--x)) rotate(var(--r))}100%{transform:none}}
+@keyframes send{0%,60%{opacity:0;transform:translateX(-20px)}70%,92%{opacity:1;transform:none}100%{opacity:0}}
