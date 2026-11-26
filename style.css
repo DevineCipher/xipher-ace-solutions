@@ -1,0 +1,44 @@
+body{margin:0;background:#FFFFFF}
+a{color:#A26C14;text-decoration:none}a:hover{color:#6E480C}
+h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif;margin:0}p{margin:0}
+@keyframes grid{to{background-position:0 64px}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes dash{to{stroke-dashoffset:-80}}
+@keyframes blink{0%,100%{opacity:.3}50%{opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+.rv{animation:rise linear both;animation-timeline:view();animation-range:entry 0% cover 25%}
+.card{transition:transform .35s,border-color .35s}.card:hover{transform:perspective(900px) rotateX(5deg) rotateY(-6deg) translateY(-6px);border-color:#A26C14;box-shadow:0 18px 40px rgba(0,0,0,.08)}
+@keyframes drawer{0%,14%,72%,100%{transform:translateY(0)}24%,62%{transform:translateY(52px)}}
+@keyframes led{0%,20%,66%,100%{background:#4A1A1A;box-shadow:none}24%,62%{background:#E5484D;box-shadow:0 0 14px #E5484D}}
+@keyframes flash{0%,27%,36%,100%{opacity:0}30%{opacity:.9}}
+@keyframes shot{0%,30%{opacity:0;transform:translate(0,0) scale(.3)}40%{opacity:1;transform:translate(-40px,70px) scale(.8)}55%,90%{opacity:1;transform:translate(10px,170px) scale(1)}100%{opacity:0;transform:translate(10px,170px) scale(1)}}
+@keyframes logrow{0%,52%{opacity:0;transform:translateX(12px)}58%,92%{opacity:1;transform:none}100%{opacity:0}}
+@keyframes paper{0%,10%{height:0}60%,85%{height:120px}100%{height:0}}
+@keyframes label{0%,15%{transform:translateX(-96px)}55%,85%{transform:translateX(0)}100%{transform:translateX(-96px)}}
+.lp{animation-duration:7s;animation-iteration-count:infinite;animation-timing-function:ease-in-out}
+@keyframes m1{0%,4%{opacity:0;transform:translateY(10px)}8%,92%{opacity:1;transform:none}100%{opacity:0}}
+@keyframes m2{0%,22%{opacity:0;transform:translateY(10px)}26%,92%{opacity:1;transform:none}100%{opacity:0}}
+@keyframes ty{0%,30%{opacity:0}34%,50%{opacity:1}54%,100%{opacity:0}}
+@keyframes m3{0%,52%{opacity:0;transform:translateY(10px)}56%,92%{opacity:1;transform:none}100%{opacity:0}}
+@keyframes m4{0%,68%{opacity:0;transform:translateY(10px)}72%,92%{opacity:1;transform:none}100%{opacity:0}}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(210,154,58,.6)}100%{box-shadow:0 0 0 18px rgba(210,154,58,0)}}
+.ch{animation-duration:10s;animation-iteration-count:infinite;animation-timing-function:ease-out}
+@keyframes spin{to{transform:rotateY(360deg)}}
+@keyframes ring{to{transform:rotate(360deg)}}
+.fl{animation:float 5s ease-in-out infinite}.d1{animation-delay:-1.2s}.d2{animation-delay:-2.4s}.d3{animation-delay:-3.6s}
+@keyframes fillx{0%,8%{transform:scaleX(0)}70%,92%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.fx{transform-origin:left;animation:fillx 7s ease-in-out infinite}
+.l0{animation:on 7s infinite}.l1{animation:on1 7s infinite}.l2{animation:on2 7s infinite}.l3{animation:on3 7s infinite}.l4{animation:on4 7s infinite}.l5{animation:on5 7s infinite}
+@keyframes on{0%,6%{background:#111111}9%,92%{background:#D29A3A;color:#000}100%{background:#111111}}
+@keyframes on1{0%,18%{background:#111111}21%,92%{background:#D29A3A;color:#000}100%{background:#111111}}
+@keyframes on2{0%,30%{background:#111111}33%,92%{background:#D29A3A;color:#000}100%{background:#111111}}
+@keyframes on3{0%,42%{background:#111111}45%,92%{background:#D29A3A;color:#000}100%{background:#111111}}
+@keyframes on4{0%,54%{background:#111111}57%,92%{background:#D29A3A;color:#000}100%{background:#111111}}
+@keyframes on5{0%,66%{background:#111111}69%,92%{background:#D29A3A;color:#000}100%{background:#111111}}
+@keyframes snap{0%,6%{transform:perspective(700px) translateZ(260px) rotateX(35deg);opacity:0}30%,88%{transform:none;opacity:1}100%{opacity:0}}
+@keyframes scan{0%,100%{transform:translateY(0)}50%{transform:translateY(38px)}}
+@keyframes turn{to{transform:rotate(360deg)}}
+@keyframes plug{0%,100%{transform:translateX(-10px)}45%,70%{transform:translateX(0)}}
+.sn{animation:snap 7s cubic-bezier(.2,.8,.2,1) infinite}.e1{animation-delay:.25s}.e2{animation-delay:.5s}.e3{animation-delay:.75s}.e4{animation-delay:1s}.e5{animation-delay:1.25s}
+.gear{transform-box:fill-box;transform-origin:center;animation:turn 6s linear infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
