@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://devinecipher.github.io/xipher-ace-solutions/sitemap.xml
