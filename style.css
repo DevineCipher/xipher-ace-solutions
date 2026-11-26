@@ -139,3 +139,5 @@ h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif;margin:0;letter-spacing:-.
 @keyframes fade7{0%,70%{opacity:0;transform:translateY(8px)}76%,92%{opacity:1;transform:none}100%{opacity:0}}
 @keyframes fan{0%,10%{transform:none}40%,85%{transform:translateX(var(--x)) rotate(var(--r))}100%{transform:none}}
 @keyframes send{0%,60%{opacity:0;transform:translateX(-20px)}70%,92%{opacity:1;transform:none}100%{opacity:0}}
+.on3d>:not(.c3d){display:none!important}.c3d{position:absolute;inset:0;width:100%;height:100%;display:block;border-radius:inherit}.panel.on3d{background:#0d0d0d}
+.stage[data-s3d]{height:340px}
